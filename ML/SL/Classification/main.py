@@ -7,8 +7,8 @@ def read_root():
 # get request
 @app.get("/items/")
 def create_item(item: dict):    return {"item": item}import joblib
-model = joblib.load(r'ML\SL\Classification\knn_model.joblib')
-scaler = joblib.load(r'ML\SL\Classification\scaler.joblib')
+model = joblib.load(r'knn_model.joblib')
+scaler = joblib.load(r'scaler.joblib')
 
 
 from pydantic import BaseModel
